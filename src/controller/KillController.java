@@ -69,6 +69,10 @@ public class KillController {
 				System.out.println(line);
 				line = buffer.readLine();
 			}
+			
+			buffer.close();
+			reader.close();
+			stream.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
